@@ -1,0 +1,10 @@
+html, body, #__next { height: 100%; }
+body { margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:#f5f6f8; color:#111; }
+.container { max-width:1080px; margin:0 auto; padding:20px; }
+.header { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px 0; }
+.card { background:#fff; border-radius:8px; padding:16px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.marquee { display:inline-block; white-space:nowrap; will-change: transform; animation: marquee 20s linear infinite; }
+@keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+.btn { background:#0059ff; color:#fff; padding:8px 12px; border-radius:6px; border:0; cursor:pointer; }
+.input, textarea, select { width:100%; padding:8px; margin-top:6px; margin-bottom:12px; border:1px solid #e6e6ee; border-radius:6px; }
+.footer-fake { height:56px; } /* reserve space for ticker */
